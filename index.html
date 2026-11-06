@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adeen Ali – Data Analyst, Hyderabad</title>
   <meta property="og:title" content="Adeen Ali – Data Analyst, Hyderabad">
-  <meta property="og:description" content="Fresher data analyst in Hyderabad: SQL, Excel, Power BI and Python projects.">
+  <meta property="og:description"
+    content="Fresher data analyst in Hyderabad: SQL, Excel, Power BI and Python projects.">
   <meta property="og:type" content="website">
-  <!-- after you deploy, change this to the full address, e.g. https://YOUR-SITE.netlify.app/images/preview.png -->
-  <meta property="og:image" content="images/preview.png">
+  <meta property="og:url" content="https://adeen-ali.netlify.app/">
+  <meta property="og:image" content="https://adeen-ali.netlify.app/images/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#1f8a5b">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231f8a5b'/%3E%3Ctext x='50' y='70' font-size='58' font-weight='700' text-anchor='middle' fill='white' font-family='sans-serif'%3EA%3C/text%3E%3C/svg%3E">
-  <meta name="description"
-    content="Portfolio of Meer Adeen Ali, a fresher data analyst in Hyderabad: SQL, Excel and Power BI projects.">
+  <meta name="twitter:image" content="https://adeen-ali.netlify.app/images/preview.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap"
@@ -766,27 +766,144 @@
         scroll-behavior: auto
       }
     }
-    .avail { display: inline-block; background: rgba(255, 255, 255, .18); border: 1px solid rgba(255, 255, 255, .55); border-radius: 20px; padding: .1em 1em; font-size: .95rem; font-weight: 600; margin-bottom: 1em }
-    .kr { font-weight: 600; color: var(--c); flex: 0 !important }
-    .btn.lv { border-color: var(--c); color: var(--c) }
-    .im img { cursor: zoom-in }
-    .lb { position: fixed; inset: 0; background: rgba(0, 0, 0, .85); display: grid; place-items: center; z-index: 50; cursor: zoom-out; padding: 24px }
-    .lb img { max-width: 100%; max-height: 100%; border-radius: 4px }
-    .cf { display: grid; gap: 12px; margin-top: 14px; max-width: 620px }
-    .cf input, .cf textarea { padding: .7em 1em; border: 2px solid var(--d); border-radius: 4px; font: inherit; color: var(--d) }
-    .cf .btn { justify-self: start; background: var(--d); border-color: var(--d); color: #fff }
-    #tt { position: fixed; right: 20px; bottom: 20px; width: 44px; height: 44px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-size: 1.3rem; opacity: 0; pointer-events: none; transition: opacity .25s, background .2s; z-index: 25 }
-    #tt.s { opacity: 1; pointer-events: auto }
-    #tt:hover { background: var(--c) }
-    .mb { display: none; background: none; border: 2px solid var(--d); border-radius: 4px; font-size: 1.2rem; padding: .1em .6em; cursor: pointer; color: var(--d) }
-    @media(max-width:800px) {
-      .mb { display: block }
-      header nav { display: none; position: absolute; top: 64px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: flex-start; gap: 0; padding: 8px 24px 16px; border-bottom: 2px solid var(--d); overflow: visible }
-      header nav.open { display: flex }
-      header nav a:nth-child(n+4) { display: block }
-      header nav a { padding: .5em 0; width: 100% }
+
+    .avail {
+      display: inline-block;
+      background: rgba(255, 255, 255, .18);
+      border: 1px solid rgba(255, 255, 255, .55);
+      border-radius: 20px;
+      padding: .1em 1em;
+      font-size: .95rem;
+      font-weight: 600;
+      margin-bottom: 1em
     }
 
+    .kr {
+      font-weight: 600;
+      color: var(--c);
+      flex: 0 !important
+    }
+
+    .btn.lv {
+      border-color: var(--c);
+      color: var(--c)
+    }
+
+    .im img {
+      cursor: zoom-in
+    }
+
+    .lb {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .85);
+      display: grid;
+      place-items: center;
+      z-index: 50;
+      cursor: zoom-out;
+      padding: 24px
+    }
+
+    .lb img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 4px
+    }
+
+    .cf {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+      max-width: 620px
+    }
+
+    .cf input,
+    .cf textarea {
+      padding: .7em 1em;
+      border: 2px solid var(--d);
+      border-radius: 4px;
+      font: inherit;
+      color: var(--d)
+    }
+
+    .cf .btn {
+      justify-self: start;
+      background: var(--d);
+      border-color: var(--d);
+      color: #fff
+    }
+
+    #tt {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #111;
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.3rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s, background .2s;
+      z-index: 25
+    }
+
+    #tt.s {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    #tt:hover {
+      background: var(--c)
+    }
+
+    .mb {
+      display: none;
+      background: none;
+      border: 2px solid var(--d);
+      border-radius: 4px;
+      font-size: 1.2rem;
+      padding: .1em .6em;
+      cursor: pointer;
+      color: var(--d)
+    }
+
+    @media(max-width:800px) {
+      .mb {
+        display: block
+      }
+
+      header nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 8px 24px 16px;
+        border-bottom: 2px solid var(--d);
+        overflow: visible
+      }
+
+      header nav.open {
+        display: flex
+      }
+
+      header nav a:nth-child(n+4) {
+        display: block
+      }
+
+      header nav a {
+        padding: .5em 0;
+        width: 100%
+      }
+    }
   </style>
 </head>
 
@@ -795,9 +912,10 @@
   <header>
     <div class="w">
       <a class="brand" href="#top">ADEEN <span>ALI</span></a>
-      <nav id="nav"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
-          href="#certs">Certificates</a><a href="#contact">Contact</a><a id="resumeNav" href="#" target="_blank"
-          rel="noopener">Resume</a></nav><button class="mb" id="mb" aria-label="Menu">☰</button>
+      <nav id="nav"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a
+          href="#projects">Projects</a><a href="#certs">Certificates</a><a href="#contact">Contact</a><a id="resumeNav"
+          href="#" target="_blank" rel="noopener">Resume</a></nav><button class="mb" id="mb"
+        aria-label="Menu">☰</button>
     </div>
   </header>
 
@@ -853,7 +971,8 @@
       <div class="w">
         <h2>Projects</h2>
         <div class="ctl"><button class="btn" id="prev" aria-label="Previous projects">Prev</button><button class="btn"
-            id="next" aria-label="Next projects">Next</button><span class="m" id="count"></span><select class="sel" id="flt" aria-label="Filter projects"></select></div>
+            id="next" aria-label="Next projects">Next</button><span class="m" id="count"></span><select class="sel"
+            id="flt" aria-label="Filter projects"></select></div>
         <div class="track" id="track"></div>
       </div>
     </section>
@@ -947,7 +1066,7 @@
         { t: 'E-commerce Sales & Delivery Dashboard', d: 'Excel dashboard on 500 online orders: cleaned data, 7 pivot tables, a KPI sheet and 12 charts with 2 slicers. Houston is the top city and April the peak month.', tags: ['Excel', 'Pivot tables', 'Slicers', 'KPIs'], img: 'images/ecommerce-dashboard.png', src: 'https://github.com/Adeen0504/excel-sales-delivery-dashboard', r: 'Houston is the top city: 80 orders and about 60,100 in sales', feat: 1, f: ['DA'], cs: 'case.html?p=ecommerce-sales-delivery' },
         { t: 'Road Accident Analysis', d: 'Python analysis of 12,316 road accidents: cleaning, new features and four insights on timing, driver experience, causes and severity. Wet roads are 37% of night accidents against 18% by day.', tags: ['Python', 'pandas', 'EDA', 'Data cleaning'], img: 'images/accident.png', src: 'https://github.com/Adeen0504/road-accident-analysis', r: 'Wet roads: 37% of night accidents against 18% by day', feat: 1, f: ['DA'], cs: 'case.html?p=road-accident' },
         { t: 'Social Media Analytics (SQL)', d: '10 SQL queries on a 7-table social media database: most active users, trending hashtags, influencers and inactive users. I found and fixed join and column mistakes along the way.', tags: ['SQL', 'MySQL', 'Subqueries', 'AI-assisted'], img: 'images/socialmedia.png', src: 'https://github.com/Adeen0504/social-media-sql-analysis', r: '47 of 1,000 users never posted, liked or commented', feat: 1, f: ['DA'] },
-        { t: 'Instagram_EDA', d: "A breakdown of who I follow, what I'm into, and what I actually scroll — built entirely from my own liked-posts export.", tags: ['EDA', 'Data cleaning'], img: 'images/instagram.png', src: 'https://github.com/Adeen0504/INSTAGRAM_EDA', cs: 'case.html?p=instagram', feat: 1, f: ['DA'] , live: 'https://adeen0504.github.io/INSTAGRAM_EDA/insta_report.html'},
+        { t: 'Instagram_EDA', d: "A breakdown of who I follow, what I'm into, and what I actually scroll — built entirely from my own liked-posts export.", tags: ['EDA', 'Data cleaning'], img: 'images/instagram.png', src: 'https://github.com/Adeen0504/INSTAGRAM_EDA', cs: 'case.html?p=instagram', feat: 1, f: ['DA'], live: 'https://adeen0504.github.io/INSTAGRAM_EDA/insta_report.html' },
         { t: 'Customer Purchase Analytics', d: 'Statistical analysis of 500 customers. Online customers buy 53.6% of the time against 40.3% offline (p = 0.0039), while product category and discounts show no link.', tags: ['Python', 'Hypothesis testing', 'Statistics', 'AI-assisted'], img: 'images/customer.png', src: 'https://github.com/Adeen0504/customer-purchase-analytics', r: 'Online buyers: 53.6% vs 40.3% offline (p = 0.0039)', f: ['DA', 'DS'] },
         { t: 'Flood Impact on Agriculture & Economy', d: 'Machine learning project using historical flood-related data to explore and predict the potential impact of floods on agriculture and the economy across Telangana. Built using a Random Forest regression model.', tags: ['Prediction', 'Data science'], img: 'images/flood.png', src: 'https://github.com/Adeen0504/Predicting-Flood-Impact-On-Agriculture-And-Economy',/* cs: 'case.html?p=flood', */f: ['DS'], live: 'https://flood-prediction-pfi8.onrender.com/' },
         { t: 'PrintDrop', d: 'A web application designed to simplify the printing process for customers and Xerox shop owners. Customers can submit documents and printing preferences online, while shop owners can manage incoming orders and track their printing status.', tags: ['Web app', 'AI-assisted'], img: 'images/printdrop.png', src: 'https://github.com/Adeen0504/PrintDrop', cs: 'case.html?p=printdrop', live: '', f: ['Web'] },
